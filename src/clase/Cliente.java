@@ -28,7 +28,7 @@ public class Cliente {
             String[] partes = datosRecibidos.split(",");
             System.out.println(datosRecibidos);
 
-            if (partes.length == 8) {
+            if (partes.length == 6) {
                 Estudiante estudiante = new Estudiante(Integer.parseInt(partes[0]), partes[1], partes[2], partes[3], Integer.parseInt(partes[4]), Boolean.parseBoolean(partes[5]));
                 resultado1.setText("ID: " + estudiante.getId());
                 resultado2.setText("Nombre: " + estudiante.getNombre());

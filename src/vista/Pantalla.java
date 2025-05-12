@@ -12,7 +12,7 @@ public class Pantalla extends JFrame {
         JTextField numeroBusqueda;
         JLabel textoBusqueda, resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8;
         JButton boton, resetear;
-        setSize(800,900);
+        setSize(300,800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel = new JPanel();
         panel.setLayout(null);
@@ -20,7 +20,7 @@ public class Pantalla extends JFrame {
 
         //Se crea un objeto
         numeroBusqueda = new JTextField();
-        textoBusqueda = new JLabel();
+        textoBusqueda = new JLabel("Ingresa el numero: ");
         resultado1 = new JLabel();
         resultado2 = new JLabel();
         resultado3 = new JLabel();
@@ -33,8 +33,8 @@ public class Pantalla extends JFrame {
         resetear = new JButton();
 
         //Se dimensiona
-        textoBusqueda.setBounds(2, 20, 300, 30);
-        numeroBusqueda.setBounds(10, 30, 100, 30);
+        textoBusqueda.setBounds(10, 10, 300, 30);
+        numeroBusqueda.setBounds(10, 40, 100, 30);
         resultado1.setBounds(10, 60, 500, 200);
         resultado2.setBounds(10, 90, 500, 200);
         resultado3.setBounds(10, 110, 500, 200);
